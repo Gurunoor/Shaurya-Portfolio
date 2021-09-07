@@ -124,6 +124,37 @@ img{
     max-width: 100%;
     height: auto;
 }
+#status{
+    width: 53%;
+    text-align: center;
+    padding: 10px;
+    margin: 5px auto;
+    border-radius: 8px;
+}
+#status.success{
+    background-color: var(--first-color);
+    animation: status 4s ease forwards;
+}
+#status.error{
+    background-color: rgb(250,129,92);
+    color: white;
+    animation: status 4s ease forwards;
+}
+@keyframes status{
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section{
     padding: 2rem 0 4rem;
@@ -323,6 +354,7 @@ img{
 .button--flex{
     display: inline-flex;
     align-items: center;
+    border:none;
 }
 
 /*==================== ABOUT ====================*/
@@ -424,7 +456,38 @@ img{
     display: block;
     background-color: var(--first-color);
 }
-
+.skills__excel,
+.skills__word,
+.skills__aid,
+.skills__behavioural{
+    width: 90%;
+}
+.skills__analytical{
+    width: 85%;
+}
+.skills__sipoc,
+.skills__swot,
+.skills__pfc,
+.skills__rca,
+.skills__quality,
+.skills__ni,
+.skills__visio,
+.skills__datamanagement,
+.skills__hazadous,
+.skills__vsm{
+    width: 80%;
+}
+.skills__minitab,
+.skills__blockly,
+.skills__sse{
+    width: 75%;
+}
+.skills__tableau{
+    width: 60%;
+}
+.skills__lss{
+    width: 70%;
+}
 .skills__laravel{
     width: 80%;
 }
