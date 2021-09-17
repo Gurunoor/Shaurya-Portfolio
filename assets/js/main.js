@@ -129,3 +129,14 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+function sendEmailDirectly(){
+    window.open('mailto:shauryasingh9419@gmail.com');
+
+}
+function sendEmail() {
+    
+    const name =document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const Message = document.getElementById("message").value;
+    window.open(`mailto:shauryasingh9419@gmail.com?subject=${name}&body=${message}`);
+  }
