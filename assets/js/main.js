@@ -138,5 +138,5 @@ function sendEmail() {
     const name =document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const Message = document.getElementById("message").value;
-    window.open(`mailto:shauryasingh9419@gmail.com?subject=${name}&body=${message}`);
+    window.open(`mailto:shauryasingh9419@gmail.com?subject=${name}&body=${Message}`);
   }
